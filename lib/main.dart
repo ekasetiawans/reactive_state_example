@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Injector(
-      items: [
+      create: () => [
         CounterController(),
       ],
       child: MaterialApp(
